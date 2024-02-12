@@ -1,0 +1,111 @@
+.knobs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.button {
+    position: relative;
+    top: 50%;
+    width: 74px;
+    height: 36px;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+}
+
+.checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#button-10 {
+    .knobs {
+        &:before {
+            position: absolute;
+            top: 4px;
+            width: 20px;
+            height: 10px;
+            font-size: 10px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1;
+            padding: 9px 4px;
+            border-radius: 5px;
+            transition: 0.3s ease all;
+            content: "";
+            left: 4px;
+            background-color: $primary;
+        }
+
+        &:after {
+            position: absolute;
+            top: 4px;
+            width: 20px;
+            height: 10px;
+            font-size: 10px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1;
+            padding: 9px 4px;
+            border-radius: 50px;
+            transition: 0.3s ease all;
+            content: "Рус";
+            right: 4px;
+            color: $dark;
+        }
+
+        span {
+            position: absolute;
+            top: 4px;
+            width: 20px;
+            height: 10px;
+            font-size: 10px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1;
+            padding: 9px 4px;
+            border-radius: 2px;
+            transition: 0.3s ease all;
+            display: inline-block;
+            left: 4px;
+            color: $white;
+            z-index: 1;
+        }
+    }
+
+    .checkbox {
+        &:checked+.knobs {
+            span {
+                color: $dark;
+            }
+
+            &:before {
+                left: 42px;
+            }
+
+            &:after {
+                color: $white;
+            }
+        }
+    }
+}

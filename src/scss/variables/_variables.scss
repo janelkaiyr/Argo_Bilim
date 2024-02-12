@@ -1,0 +1,21 @@
+// Colors
+$dark: #0A1120;
+$white: #ffff;
+$primary: #409F66;
+
+$secondary: #F0BC36;
+
+//Fonts
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(../fonts/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url(../fonts/Gilroy-Light.otf);
+}
+
+$gilroy-light: 'Gilroy-Light';
+$gilroy-bold: 'Gilroy-Bold';

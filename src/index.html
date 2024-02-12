@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Bilim</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__wrap">
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span> <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <div class="nav__menu"><img class="nav__logo" src="icons/logo.svg" alt="Argo-bilim"></div>
+                    <ul class="nav__menu" id="menu">
+                        <li class="menu__nav-link"><a href="#aboutcompany-page">О проекте</a></li>
+                        <li class="menu__nav-link"><a href="#service-page">Новости</a></li>
+                        <li class="menu__nav-link"><a href="#workdone-page">Семинары</a></li>
+                        <li class="menu__nav-link"><a href="#aboutcompany-page">Консультации</a></li>
+                        <li class="menu__nav-link"><a href="#news-page">База знаний</a></li>
+                        <li class="menu__nav-link"><a href="#form-page">Видеоуроки</a></li>
+                    </ul>
+                    <div class="nav__menu"><img class="nav__search" src="icons/search.svg" alt="search"></div>
+                    <div class="nav__menu">
+                        <div class="button" id="button-10">
+                            <input type="checkbox" class="checkbox" />
+                            <div class="knobs">
+                                <span>Каз</span>
+                            </div>
+                            <div class="layer"></div>
+
+                        </div>
+                    </div>
+                    <div class="nav__menu"><img class="nav__login" src="icons/login.svg" alt="login">
+                        <a class="nav__login">Вход</a>
+                    </div>
+
+
+                </div>
+            </div>
+    </header>
+    <div class="project">
+        <div class="container">
+            <div class="project__text">
+                <h2 class="title">Портал распространения знаний</h2>
+                <div class="project__descr">
+                    С 2006 года Министерством сельского хозяйства ведется работа по информационному обеспечению
+                    субъектов АПК, в рамках которой сформирована система мероприятий по передаче знаний в
+                    агропромышленном комплексе на базе 11 Центров распространений знаний и районных консультантов АО
+                    «Казагромаркетинг».
+                </div>
+                <button class="btn">Подробнее</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-page">
+
+        <div class="service-page__container ">
+            <div class="service-page__wrapper ">
+                <div class="service-page__card-first">
+                    <img src="/icons/document.svg" alt="image">
+                    <a class="block-caption">Нормативно правовая база</a>
+                </div>
+                <div class="service-page__card">
+                    <img src="/icons/videocam.svg" alt="image">
+                    <a class="block-caption">Видеоуроки</a>
+                </div>
+                <div class="service-page__card">
+                    <img src="/icons/briefcase.svg" alt="image">
+                    <a class="block-caption">Господдержка</a>
+                </div>
+                <div class="service-page__card">
+                    <img src="/icons/newspaper.svg" alt="image">
+                    <a class="block-caption">Статьи</a>
+                </div>
+                <div class="service-page__card">
+                    <img src="/icons/document.svg" alt="image">
+                    <a class="block-caption">Инфографика</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="seminar " id="seminar">
+        <div class="seminar-title"><span class="title">Семинары</span><img class="caption-arrow"
+                src="/icons/arrow-right.svg" alt="image"></div>
+
+        <div class="seminar-container swiper mySwiper">
+            <div class="seminar-wrapper swiper-wrapper">
+                <div class="seminar__card swiper-slide">
+                    <p class="seminar-card-text">Фундук - возделывание промышленных садов
+                    </p>
+                </div>
+                <div class="seminar__card swiper-slide">
+                    <p class="seminar-card-text">Успешный бизнес по выращиванию яблоневых садов. Настоящее и будущее
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="news">
+        <div class="seminar-title"><span class="title">Новости</span><img class="caption-arrow"
+                src="/icons/arrow-right.svg" alt="image"></div>
+
+
+        <div class="news__field">
+            <div class="container">
+
+            </div>
+        </div>
+    </div>
+    <div class="modal call">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;
+                    </div>
+                    <div class="modal__title">Заказать звонок</div><input required placeholder="Ваше имя" name="name"
+                        type="text" class="modal__input"><input required placeholder="Ваш номер телефона" name="phone"
+                        type="phone" class="modal__input"><button class="btn ">Отправить</button>
+                    <div class="modal__inform">Вы можете узнать события криптовалютного рынка оставив нам заявку на
+                        консультацию и мы вам перезвоним</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal question">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Задать вопрос</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <input required placeholder="Тема" name="title" type="text" class="modal__input">
+                    <textarea required placeholder="Тема" name="text" type="text" class="modal__input">
+                    <button class="btn ">Отправить</button>
+                    <div class="modal__inform">Вы можете узнать события криптовалютного рынка оставив нам заявку на консультацию и мы вам перезвоним</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

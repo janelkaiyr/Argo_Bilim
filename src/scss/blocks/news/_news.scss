@@ -1,0 +1,75 @@
+.news {
+    padding: 40px 0 50px 0;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        align-items: start;
+        align-self: start;
+        height: 1400px;
+
+        gap: 20px;
+    }
+
+    &__field {
+        margin-top: 50px;
+        padding: 50px 0;
+        width: 100%;
+    }
+
+    &__item {
+        width: 360px;
+        min-height: 450px;
+        background: $white;
+        font-size: 16px;
+        font-weight: 300;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        &-subtitle {
+            font-family: $gilroy-bold;
+            font-size: 16px;
+            padding: 0 0 10px;
+            margin-top: 20px;
+        }
+
+        &-descr {
+            margin-top: 20px;
+            padding: 0 0 10px;
+            font-family: $gilroy-light;
+            font-size: 14px;
+        }
+
+        &-date {
+            margin-top: 20px;
+            padding: 0 0 10px;
+            color: gray;
+            font-family: $gilroy-light;
+            font-size: 14px;
+        }
+
+        &-button {
+            font-family: $gilroy-bold;
+            font-size: 14px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 10px 0;
+
+            .button-arrow {
+                margin-left: 5px;
+                background-color: $secondary;
+                border-radius: 5px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+            }
+        }
+    }
+}
